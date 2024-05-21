@@ -67,23 +67,27 @@
                     </div>
                 </div>
             </div>
+            <!--Botones de navegaciòn-->
             <div class="nav-menu">
                 <ul class="nav nav-tabs d-flex justify-content-center w-100" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
                             data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
                             aria-selected="true"> <!-- Ajustado a true para reflejar que está activo -->
-                            <i class="far fa-square link-secondary fs-2 me-2"></i>
+                            <i class="fas fa-table-cells link-secondary fs-2 me-2"></i>
                         </button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
                             data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
                             aria-selected="false">
-                            <i class="fas fa-table-cells link-secondary fs-2 me-2"></i>
+                            <i class="far fa-square link-secondary fs-2 me-2"></i>
                         </button>
                     </li>
                 </ul>
+                <!--Finaliza-->
+
+                <!-- Primer cuerpo de código GRILLA-->
                 <div class="tab-content d-flex flex-column w-100 justify-content-center"
                     id="myTabContent align-items-center">
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
@@ -131,109 +135,106 @@
                             </div>
                         </div>
                     </div>
-                    <div class="tab-content d-flex flex-column w-100 justify-content-center" id="myTabContent"
-                        align="center">
-                        <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel"
-                            aria-labelledby="profile-tab" tabindex="0">
-                            <div class="container">
-                                <div class="row">
-                                    <!-- Image 1 -->
-                                    <div class="col-md-12 mt-4">
-                                        <div class="card mb-3 mx-auto" style="width: 40rem;">
-                                            <div class="card-body d-flex align-items-center">
-                                                <div>
-                                                    <h2 class="my-0 py-0 fs-3">Techno place</h2>
-                                                </div>
-                                                <div class="d-flex align-items-center ms-auto gap-2">
-                                                    <p class="my-0 py-0 fs-6">12/04/2024</p>
-                                                    <i class="fas fa-ellipsis-vertical fs-3"></i>
-                                                </div>
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
+                        tabindex="0">
+                        <div class="container">
+                            <div class="row">
+                                <!-- Image 1 -->
+                                <div class="col-md-12 mt-4">
+                                    <div class="card mb-3 mx-auto" style="width: 40rem;">
+                                        <div class="card-body d-flex align-items-center">
+                                            <div>
+                                                <h2 class="my-0 py-0 fs-3">Techno place</h2>
                                             </div>
-                                            <img src="data:image/jpeg;base64,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"
-                                                class="card-img-top" alt="Image 1">
-                                            <div class="card-body">
-                                                <div class="mb-3 d-flex">
-                                                    <i class="fas fa-heart me-2"></i>
-                                                    <i class="fas fa-comment me-2"></i>
-                                                    <i class="fas fa-paper-plane me-2"></i>
-                                                    <i class="fas fa-bookmark ms-auto"></i>
-                                                </div>
-                                                <p class="lead">600 likes</p>
-                                                <p class="fs-6">Quisque mollis tincidunt metus, vel mollis tortor
-                                                    scelerisque at. Donec eget sodales felis, ut fermentum ipsum. In non
-                                                    diam in ante congue posuere. Maecenas consectetur ipsum neque, sit
-                                                    amet dictum neque scelerisque quis. Morbi scelerisque, libero nec
-                                                    blandit porttitor, erat nunc molestie ipsum, a commodo sem enim sit
-                                                    amet justo. Donec ut lorem interdum, eleifend lorem id, pellentesque
-                                                    arcu. Integer cursus pellentesque tellus, pretium consequat mi
-                                                    vulputate a.</p>
+                                            <div class="d-flex align-items-center ms-auto gap-2">
+                                                <p class="my-0 py-0 fs-6">12/04/2024</p>
+                                                <i class="fas fa-ellipsis-vertical fs-3"></i>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-12 mt-4">
-                                        <div class="card mb-3 mx-auto" style="width: 40rem;">
-                                            <div class="card-body d-flex align-items-center">
-                                                <div>
-                                                    <h2 class="my-0 py-0 fs-3">Hard techno’s High-Frequency Priestess
-                                                    </h2>
-                                                </div>
-                                                <div class="d-flex align-items-center ms-auto gap-2">
-                                                    <p class="my-0 py-0 fs-6">17/04/2024</p>
-                                                    <i class="fas fa-ellipsis-vertical fs-3"></i>
-                                                </div>
+                                        <img src="data:image/jpeg;base64,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"
+                                            class="card-img-top" alt="Image 1">
+                                        <div class="card-body">
+                                            <div class="mb-3 d-flex">
+                                                <i class="fas fa-heart me-2"></i>
+                                                <i class="fas fa-comment me-2"></i>
+                                                <i class="fas fa-paper-plane me-2"></i>
+                                                <i class="fas fa-bookmark ms-auto"></i>
                                             </div>
-                                            <img src="https://undergroundsound.eu/wp-content/uploads/2024/01/Sara-Landry-2-by-Yuya-Ohashi.jpg"
-                                                class="card-img-top" style="max-width: 100%;" alt="Image 2">
-                                            <div class="card-body">
-                                                <div class="mb-3 d-flex">
-                                                    <i class="fas fa-heart me-2"></i>
-                                                    <i class="fas fa-comment me-2"></i>
-                                                    <i class="fas fa-paper-plane me-2"></i>
-                                                    <i class="fas fa-bookmark ms-auto"></i>
-                                                </div>
-                                                <p class="lead">1000 likes</p>
-                                                <p class="fs-6">Quisque mollis tincidunt metus, vel mollis tortor
-                                                    scelerisque at. Donec eget sodales felis, ut fermentum ipsum. In non
-                                                    diam in ante congue posuere. Maecenas consectetur ipsum neque, sit
-                                                    amet dictum neque scelerisque quis. Morbi scelerisque, libero nec
-                                                    blandit porttitor, erat nunc molestie ipsum, a commodo sem enim sit
-                                                    amet justo. Donec ut lorem interdum, eleifend lorem id, pellentesque
-                                                    arcu. Integer cursus pellentesque tellus, pretium consequat mi
-                                                    vulputate a.</p>
-                                            </div>
+                                            <p class="lead">600 likes</p>
+                                            <p class="fs-6">Quisque mollis tincidunt metus, vel mollis tortor
+                                                scelerisque at. Donec eget sodales felis, ut fermentum ipsum. In non
+                                                diam in ante congue posuere. Maecenas consectetur ipsum neque, sit
+                                                amet dictum neque scelerisque quis. Morbi scelerisque, libero nec
+                                                blandit porttitor, erat nunc molestie ipsum, a commodo sem enim sit
+                                                amet justo. Donec ut lorem interdum, eleifend lorem id, pellentesque
+                                                arcu. Integer cursus pellentesque tellus, pretium consequat mi
+                                                vulputate a.</p>
                                         </div>
                                     </div>
-                                    <div class="col-md-12 mt-4">
-                                        <div class="card mb-3 mx-auto" style="width: 40rem;">
-                                            <div class="card-body d-flex align-items-center">
-                                                <div>
-                                                    <h2 class="my-0 py-0 fs-3">Nico Moreno
-                                                    </h2>
-                                                </div>
-                                                <div class="d-flex align-items-center ms-auto gap-2">
-                                                    <p class="my-0 py-0 fs-6">18/04/2024</p>
-                                                    <i class="fas fa-ellipsis-vertical fs-3"></i>
-                                                </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="card mb-3 mx-auto" style="width: 40rem;">
+                                        <div class="card-body d-flex align-items-center">
+                                            <div>
+                                                <h2 class="my-0 py-0 fs-3">Hard techno’s High-Frequency Priestess
+                                                </h2>
                                             </div>
-                                            <img src="data:image/jpeg;base64,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"
-                                                class="card-img-top" style="max-width: 100%;" alt="Image 2">
-                                            <div class="card-body">
-                                                <div class="mb-3 d-flex">
-                                                    <i class="fas fa-heart me-2"></i>
-                                                    <i class="fas fa-comment me-2"></i>
-                                                    <i class="fas fa-paper-plane me-2"></i>
-                                                    <i class="fas fa-bookmark ms-auto"></i>
-                                                </div>
-                                                <p class="lead">4000 likes</p>
-                                                <p class="fs-6">Quisque mollis tincidunt metus, vel mollis tortor
-                                                    scelerisque at. Donec eget sodales felis, ut fermentum ipsum. In non
-                                                    diam in ante congue posuere. Maecenas consectetur ipsum neque, sit
-                                                    amet dictum neque scelerisque quis. Morbi scelerisque, libero nec
-                                                    blandit porttitor, erat nunc molestie ipsum, a commodo sem enim sit
-                                                    amet justo. Donec ut lorem interdum, eleifend lorem id, pellentesque
-                                                    arcu. Integer cursus pellentesque tellus, pretium consequat mi
-                                                    vulputate a.</p>
+                                            <div class="d-flex align-items-center ms-auto gap-2">
+                                                <p class="my-0 py-0 fs-6">17/04/2024</p>
+                                                <i class="fas fa-ellipsis-vertical fs-3"></i>
                                             </div>
+                                        </div>
+                                        <img src="https://undergroundsound.eu/wp-content/uploads/2024/01/Sara-Landry-2-by-Yuya-Ohashi.jpg"
+                                            class="card-img-top" style="max-width: 100%;" alt="Image 2">
+                                        <div class="card-body">
+                                            <div class="mb-3 d-flex">
+                                                <i class="fas fa-heart me-2"></i>
+                                                <i class="fas fa-comment me-2"></i>
+                                                <i class="fas fa-paper-plane me-2"></i>
+                                                <i class="fas fa-bookmark ms-auto"></i>
+                                            </div>
+                                            <p class="lead">1000 likes</p>
+                                            <p class="fs-6">Quisque mollis tincidunt metus, vel mollis tortor
+                                                scelerisque at. Donec eget sodales felis, ut fermentum ipsum. In non
+                                                diam in ante congue posuere. Maecenas consectetur ipsum neque, sit
+                                                amet dictum neque scelerisque quis. Morbi scelerisque, libero nec
+                                                blandit porttitor, erat nunc molestie ipsum, a commodo sem enim sit
+                                                amet justo. Donec ut lorem interdum, eleifend lorem id, pellentesque
+                                                arcu. Integer cursus pellentesque tellus, pretium consequat mi
+                                                vulputate a.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mt-4">
+                                    <div class="card mb-3 mx-auto" style="width: 40rem;">
+                                        <div class="card-body d-flex align-items-center">
+                                            <div>
+                                                <h2 class="my-0 py-0 fs-3">Nico Moreno
+                                                </h2>
+                                            </div>
+                                            <div class="d-flex align-items-center ms-auto gap-2">
+                                                <p class="my-0 py-0 fs-6">18/04/2024</p>
+                                                <i class="fas fa-ellipsis-vertical fs-3"></i>
+                                            </div>
+                                        </div>
+                                        <img src="data:image/jpeg;base64,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"
+                                            class="card-img-top" style="max-width: 100%;" alt="Image 2">
+                                        <div class="card-body">
+                                            <div class="mb-3 d-flex">
+                                                <i class="fas fa-heart me-2"></i>
+                                                <i class="fas fa-comment me-2"></i>
+                                                <i class="fas fa-paper-plane me-2"></i>
+                                                <i class="fas fa-bookmark ms-auto"></i>
+                                            </div>
+                                            <p class="lead">4000 likes</p>
+                                            <p class="fs-6">Quisque mollis tincidunt metus, vel mollis tortor
+                                                scelerisque at. Donec eget sodales felis, ut fermentum ipsum. In non
+                                                diam in ante congue posuere. Maecenas consectetur ipsum neque, sit
+                                                amet dictum neque scelerisque quis. Morbi scelerisque, libero nec
+                                                blandit porttitor, erat nunc molestie ipsum, a commodo sem enim sit
+                                                amet justo. Donec ut lorem interdum, eleifend lorem id, pellentesque
+                                                arcu. Integer cursus pellentesque tellus, pretium consequat mi
+                                                vulputate a.</p>
                                         </div>
                                     </div>
                                 </div>
